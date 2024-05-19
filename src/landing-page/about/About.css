@@ -1,0 +1,107 @@
+.About {
+    z-index: 100;
+    position: absolute;
+    text-align: right;
+  }
+  
+  .section-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+  
+  .section-1-description {
+    font-size: 1.2em;
+  }
+  
+  .section-1 > :first-child {
+    flex: 0.6;
+  }
+  
+  .section-1 > :last-child {
+    flex: 0.4;
+  }
+  
+  .section-2 > :last-child {
+    flex: 0.4;
+  }
+  
+  .about-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-1 .section-1-description h2 {
+    font-size: 1.8em;
+  }
+  
+  .section-1 .section-1-description p {
+    margin-top: 15px;
+    font-size: 1.3em;
+  }
+  
+  .section-1-pic {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-left: -30px;
+  }
+  
+  /* panel styles */
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  
+  /* colours */
+  .color-violet {
+    background-color: #7a4eab;
+  }
+  .color-indigo {
+    background-color: #4332cf;
+  }
+  .color-blue {
+    background-color: #2f8fed;
+  }
+  .color-green {
+    background-color: #4dcf42;
+  }
+  .color-yellow {
+    background-color: #faeb33;
+  }
+  .color-orange {
+    background-color: #f19031;
+  }
+  .color-red {
+    background-color: #f2293a;
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .section-1 {
+      flex-direction: column;
+    }
+    .about-header {
+      margin-bottom: 5px;
+    }
+    .section-1-pic {
+      margin-top: 30px;
+    }
+    .website-sections-header {
+      margin-top: 40px;
+      margin-bottom: -15px;
+    }
+  }
+  /* Center the image on smaller screens */
+  /* Center the image on smaller screens */
+  /* Center the image on smaller screens */
+  @media screen and (max-width: 600px) {
+    .section-1-pic {
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+  }

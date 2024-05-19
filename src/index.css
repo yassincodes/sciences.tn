@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+#root {
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.banner {
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 4px;
+  color: white;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+}
+
+.slider {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tunisia-flag {
+  border-radius: 10px;
+}
+
+.big-screen {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 70vw;
+}
+
+.small-screen {
+  display: none;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 40vw;
+  padding: 10vh;
+}
+
+.paragraph {
+  font-size: 2em;
+}
+
+.main {
+  height: 80vh;
+  width: 100vw;
+}
+
+.main-text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+    align-items: center; */
+  color: white;
+  font-size: 3em;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+  .big-screen {
+    display: none;
+  }
+  .small-screen {
+    display: initial;
+  }
+  .main-text {
+    font-size: 2em;
+  }
+}
+
+/* Style the scrollbar for webkit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Set the width of the scrollbar for Firefox and other browsers that support it */
+.content-wrapper {
+  scrollbar-width: thin;
+}
+
+/* Style the scrollbar for Firefox and other browsers that support it */
+.content-wrapper::-webkit-scrollbar {
+  background-color: #f5f5f5;
+  width: 8px;
+  height: 8px;
+}
+
+.content-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.before_Home {
+}
+
+.and {
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.loading-text {
+  font-size: 1em;
+  animation: pulse 0.9s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    font-size: 1em;
+  }
+  to {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hide-on-phone {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .bottom-wave {
+    margin-top: -15vh;
+  }
+
+  .about-header {
+    margin-top: 20px;
+  }
+}
